@@ -30,11 +30,11 @@ const SurahList = () => {
 
 
   return (
-    <div>
+    <div className="bg-[#C4BEB5]" >
       <Helmet>
         <title> Quran </title>
       </Helmet>
-      <div className="mt-40 input-success mx-auto max-w-lg">
+      <div className="pt-32  input-success mx-auto max-w-lg">
 
         
       <div className="flex items-center  p-2 ">
@@ -42,12 +42,12 @@ const SurahList = () => {
       <div className="mr-2">
         <img src="/src/assets/icon/search.png" alt="Search Icon" className="w-10 h-10" />
       </div>
-      <input
+      <input 
       
           type="text"
           placeholder="Search surah...  "
           
-          className="block  p-2 border rounded-md input-success w-[400px] md:w-[500px] mx-auto"
+          className="block  p-2 border rounded-md input-success w-[400px] md:w-[500px] mx-auto mt-0"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
           

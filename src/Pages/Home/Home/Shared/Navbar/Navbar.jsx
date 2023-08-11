@@ -6,22 +6,22 @@ const NavBar = () => {
         <>
             
           <div className="  ">
-          <button className="group relative h-12 w-28 overflow-hidden rounded-lg bg-[#008000]  text-lg shadow ml-0 md:mr-[100px]  mb-4 mb:my-0">
+          <button className="group relative h-11 w-20 overflow-hidden rounded-lg bg-[#008000]  text-lg shadow ml-0 md:mr-[100px]  mb-4 mb:my-0">
     <div className="absolute inset-0 w-0 bg-white transition-all duration-[250ms] ease-out group-hover:w-full"></div>
     <span className="relative text-white group-hover:text-black"><Link to="/">Home</Link></span>
   </button>
 
-  <button className="group relative h-12 w-28 overflow-hidden rounded-lg bg-[#008000]  text-lg shadow ml-0 md:mr-[100px]  mb-4 mb:my-0">
+  <button className="group relative h-11 w-20 overflow-hidden rounded-lg bg-[#008000]  text-lg shadow ml-0 md:mr-[100px]  mb-4 mb:my-0">
     <div className="absolute inset-0 w-0 bg-white transition-all duration-[250ms] ease-out group-hover:w-full"></div>
     <span className="relative text-white group-hover:text-black"><Link to="/surah">Quran</Link></span>
   </button>
 
-  <button className="group relative h-12 w-28 overflow-hidden rounded-lg bg-[#008000]  text-lg shadow ml-0 md:mr-[100px]  mb-4 mb:my-0">
+  <button className="group relative h-11 w-20 overflow-hidden rounded-lg bg-[#008000]  text-lg shadow ml-0 md:mr-[100px]  mb-4 mb:my-0">
     <div className="absolute inset-0 w-0 bg-white transition-all duration-[250ms] ease-out group-hover:w-full"></div>
     <span className="relative text-white group-hover:text-black"><Link to="/hadislist">Hadis</Link></span>
   </button>
 
-  <button className="group relative h-12 w-28 overflow-hidden rounded-lg bg-[#008000]  text-lg shadow ml-0 md:mr-[100px]  mb-4 mb:my-0">
+  <button className="group relative h-11 w-20 overflow-hidden rounded-lg bg-[#008000]  text-lg shadow ml-0 md:mr-[100px]  mb-4 mb:my-0">
     <div className="absolute inset-0 w-0 bg-white transition-all duration-[250ms] ease-out group-hover:w-full"></div>
     <span className="relative text-white group-hover:text-black"><Link to="/duas">Duas</Link></span>
   </button>

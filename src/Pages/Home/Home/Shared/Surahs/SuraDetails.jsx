@@ -24,8 +24,8 @@ const SurahDetails = () => {
   };
 
   return (
-    <div className="bg-[#C4BEB5]" >
-      <div className="select-container mt-10 relative p-20 ">
+    <div className="bg-[#C4BEB5] pb-20" >
+      <div className="select-container  relative p-20 ">
         <select
           className="select select-accent w-full max-w-xs"
           value={selectedSurah.id}
