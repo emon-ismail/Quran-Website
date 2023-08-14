@@ -30,14 +30,15 @@ const SurahList = () => {
 
 
   return (
-    <div className="bg-[#C4BEB5]" >
+    <div className="bg-[#F6F8F9]" >
       <Helmet>
         <title> Quran </title>
       </Helmet>
-      <div className="pt-32  input-success mx-auto max-w-lg">
+      {/* <h1 className="text-center mx-auto">ciis hic iusto. Neque tempore veniam alias molestias et in eveniet culpa dolores laborum, ipsum quod?</h1> */}
+      <div className="pt-32   input-success mx-auto max-w-lg select__container-search">
 
         
-      <div className="flex items-center  p-2 ">
+      <div className="flex items-center  p-2  ">
       
       <div className="mr-2">
         <img src="/src/assets/icon/search.png" alt="Search Icon" className="w-10 h-10" />
@@ -56,32 +57,40 @@ const SurahList = () => {
         
       </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-20 py-4  ">
+
+      <div className="   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 max-lg:grid-cols-1 max-xl:grid-cols-1 max-md:grid-cols-1     gap-y-4 mt-20 mb-8  " >
         {(searchInput === '' ? list : filteredSurahs).map((item) => (
           <div
-            key={item.id}
-            className="max-w-sm p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto"
-            style={{ width: "300px", height: "390px" }}
-          >
-            <h1 className="mb-2 text-4xl font-bold tracking-tight text-green-500">
-              {item.id}. {item.name}
-            </h1>
-            <h5 className="mb-3 text-3xl font-normal text-gray-700 dark:text-gray-400">
-              {item.transliteration}
-            </h5>
-            <h5 className="mb-3 text-3xl font-normal dark:text-gray-400 text-green-600">
-              {item.translation}
-            </h5>
-            <h5 className="mb-3 text-2xl font-normal text-gray-700 dark:text-gray-400">
-              <i>Type: {item.type}</i>
-            </h5>
-            <h1 className="mb-3 text-2xl font-normal text-gray-700 dark:text-gray-400">
-              <i>Total Verse: {item.total_verses}</i>
-            </h1>
-            <button className="btn btn-outline glass btn-success"><Link to={`/surah/${item.id}`} >
-              Read
-            </Link></button>
+          
+          key={item.id}
+          className=" mx-4 lg:col-span-1 shadow-xl md:ml-[300px] md:h-[150px] md:w-[400px]  rounded-r-3xl rounded-l-3xl border border-green-500 border-1  p-4  mb-6  group hover:bg-black"
+          // hover: ransition duration-300 ease-in-out hover:scale-110
+          // style={{ width: "300px", height: "390px" }}
+        >
+          <Link to={`/surah/${item.id}`} className="group hover:bg-sky-500 hover:ring-sky-500">
+          <div className="flex justify-between">
+          <h1 className="mb-2 text-xl font-bold tracking-tight text-green-500 font-roboto ">
+            {item.id}.    {item.transliteration}
+          </h1>
+          <h5 className="mb-3 text-xl font-normal font-uthman-taha text-green-500">
+          {item.name}
+          </h5>
           </div>
+          <h5 className="mb-3 text-lg font-normal font-roboto text-[#1B365C] group-hover:text-white">
+            ( {item.translation} )
+          </h5>
+          <div className="flex justify-between mt-5">
+          <h5 className="mb-3 text-xs font-medium font-roboto text-gray-500 group-hover:text-white ">
+            <span className="capitalize">{item.type}</span>
+          </h5>
+          <h1 className="mb-3 text-xs font-medium font-roboto text-gray-500 group-hover:text-white ">
+            <span> {item.total_verses} Ayaat</span>
+          </h1>
+          </div></Link>
+          {/* <button className="btn btn-outline glass btn-success"><Link to={`/surah/${item.id}`} >
+            Read
+          </Link></button> */}
+        </div>
         ))}
       </div>
     </div>

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* .myComponentWithBg {
   position: relative;
   background-image: url('../src/assets/BG/bg-0.jpg');
@@ -28,8 +34,46 @@
 
   .select-container {
   position: sticky;
-  top: 20px; /* Adjust the value as needed */
-  z-index: 1; /* Make sure it's above other content */
+  top: 20px; 
+  margin-left: 1200px;
+  z-index: 1; 
+}
+
+
+
+/* .select__container-search{
+  position: sticky;
+  top: 20px; 
+  margin-left: 570px;
+  z-index: 1; 
+} */
+
+@media (max-width: 1200px) {
+  .select-container {
+    margin-left: 10px; /* Adjust the margin for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .select-container {
+    margin-left: 0; /* Reset the margin for smaller screens */
+    text-align: center; /* Center the content */
+  }
+  .select__container-search{
+
+    top: 20px; 
+    margin-left: 20px;
+    
+  }
+  .select-container-1 {
+    display: none;
+  }
+}
+
+.select-container-1{
+  position: sticky;
+  top: 100px; 
+ z-index: 1; 
 }
 
 @font-face {

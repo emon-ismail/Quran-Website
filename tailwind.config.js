@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'uthman-taha': ['KFGQPC Uthman Taha Naskh', ],
+        
       },
     },
   },

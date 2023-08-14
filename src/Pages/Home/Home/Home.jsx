@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Duas from "./Shared/Duas/Duas";
+import Sidebar from "./Shared/Navbar/Sidebar";
 // import Surahlist from "./Shared/Surahs/Surahlist";
 
 // import Banner from "../Banner/Banner";
@@ -18,9 +19,11 @@ const Home = () => {
             <Helmet>
         <title>Apon Ghor |  Home </title>
       </Helmet>
-<Duas></Duas>
+{/* <Duas></Duas> */}
+{/* <Sidebar></Sidebar> */}
 
 
+        
       {/* <Surahlist></Surahlist> */}
       {/* <Surah></Surah> */}
          {/* <Banner></Banner>
