@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <div className="flex mt-20 h-[20px] select-container-1  ">
+    <div className="flex mt-20 h-[20px] select-container-1  max-xl:hidden">
       <div className="flex flex-col h-[700px] p-3 bg-white shadow w-60 rounded-lg ">
         <div className="space-y-3">
           <div className="flex items-center">
@@ -11,29 +11,31 @@ export default function Sidebar() {
           <div className="flex-1">
             <ul className="pt-2 pb-4 space-y-1 text-sm">
               <li className="rounded-sm">
-                <Link to="/" className="flex items-center p-2 space-x-3 rounded-md">
-                  <span>Home</span>
-                </Link>
+                <NavLink to="/" className="flex items-center p-2 space-x-3 rounded-md">
+                    <img className="w-8 h-8" src="/src/assets/icon/home4.png" alt="" />    <span className="font-roboto text-sm">Home</span>
+                </NavLink>
+    
+                
               </li>
               <li className="rounded-sm">
-                <Link to="/surah" className="flex items-center p-2 space-x-3 rounded-md">
-                  <span>Quran</span>
-                </Link>
+                <NavLink to="/surah" className="flex items-center p-2 space-x-3 rounded-md">
+                <img className="w-8 h-8" src="/src/assets/icon/quran2.png" alt="" />  <span className="">Quran</span>
+                </NavLink>
               </li>
               <li className="rounded-sm">
-                <Link to="/orders" className="flex items-center p-2 space-x-3 rounded-md">
-                  <span>Orders</span>
-                </Link>
+              <NavLink to="/hadis" className="flex items-center p-2 space-x-3 rounded-md">
+                    <img className="w-8 h-8" src="/src/assets/icon/hadis.png" alt="" />    <span className="font-roboto text-sm">Hadith</span>
+                </NavLink>
               </li>
               <li className="rounded-sm">
-                <Link to="/settings" className="flex items-center p-2 space-x-3 rounded-md">
-                  <span>Settings</span>
-                </Link>
+              <NavLink to="/duas" className="flex items-center p-2 space-x-3 rounded-md">
+                    <img className="w-8 h-8" src="/src/assets/icon/doa.png" alt="" />    <span className="font-roboto text-sm">Duas</span>
+                </NavLink>
               </li>
               <li className="rounded-sm">
-                <Link to="/logout" className="flex items-center p-2 space-x-3 rounded-md">
-                  <span>Logout</span>
-                </Link>
+              <NavLink to="/" className="flex items-center p-2 space-x-3 rounded-md">
+                    <img className="w-8 h-8" src="/src/assets/icon/zikr.png" alt="" />    <span className="font-roboto text-sm">Zikr</span>
+                </NavLink>
               </li>
             </ul>
           </div>

@@ -6,8 +6,8 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import SurahList from "../Pages/Home/Home/Shared/Surahs/Surahlist";
 import SuraDetails from "../Pages/Home/Home/Shared/Surahs/SuraDetails";
-import HadisList from "../Pages/Home/Home/Shared/Hadis/HadisList";
 import Duas from "../Pages/Home/Home/Shared/Duas/Duas";
+import Hadis from "../Pages/Home/Home/Shared/Hadis/Hadis.jsx";
 
 
 
@@ -18,7 +18,7 @@ import Duas from "../Pages/Home/Home/Shared/Duas/Duas";
       element: <Main></Main>,
       children:[
         {
-            path:'/',
+            path:'*',
             element:<Home></Home>
         },
         {
@@ -30,8 +30,12 @@ import Duas from "../Pages/Home/Home/Shared/Duas/Duas";
           element:<SuraDetails></SuraDetails>
             },
             {
-              path: '/hadislist',
-              element: <HadisList />,
+              path: '/hadis',
+              element: <Hadis/>,
+            },
+            {
+              path: '/duas',
+              element: <Duas></Duas>,
             },
             {
               path: '/duas',

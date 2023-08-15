@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const componentName = () => {
     return (
         <div
-        className="content__button flex flex-row items-center justify-evenly md:flex-row w-auto md:w-[48rem] container mx-auto rounded-md border border-solid border-gray-100 bg-gray-50 p-4  my-28 md:my-18">
+        className="content__button flex flex-row items-center justify-evenly md:flex-row w-auto md:w-[48rem] container mx-auto rounded-md border border-solid border-gray-100 bg-gray-50 p-4 mb-20  ">
     
   
         
