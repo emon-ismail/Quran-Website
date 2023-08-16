@@ -19,15 +19,18 @@ const MainPage = () => {
 
       {/* sidebar section */}
       <section>
-        <div className='grid grid-cols-12'>
-          <div className=' col-span-0 bg-[#FEFEFE] mt-0 md:col-span-2   '>
-              <Sidebar className="fixed top-0 left-0 right-0  "></Sidebar>
-          </div>
+      <div className='grid grid-cols-12 '>
+  {/* Sidebar */}
+  <div className='hidden md:block md:col-span-1 bg-[#23304B] mt-0 md:mt-0 md:relative  '>
+    <Sidebar className="fixed top-0 left-0 right-0 "></Sidebar>
+  </div>
 
-          <div className='col-span-9   pl-2 md:col-span-10  '>
-              <NavPage/>
-          </div>
-        </div>
+  {/* Main Content */}
+  <div className='col-span-12 md:col-span-11 pl-0'>
+    <NavPage />
+  </div>
+</div>
+
       </section>
     </React.Fragment>
   );

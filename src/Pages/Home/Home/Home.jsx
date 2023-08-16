@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Duas from "./Shared/Duas/Duas";
 import Sidebar from "./Shared/Navbar/Sidebar";
 import ComingSoon from "../../../Components/Animation/ComingSoon";
+import QuranBanner from "../../../Components/Quran-Banner/QuranBanner";
 
 // import Surahlist from "./Shared/Surahs/Surahlist";
 
@@ -25,7 +26,8 @@ const Home = () => {
 {/* <Sidebar></Sidebar> */}
 {/* <LottiePlayer animationData={comingsoon} loop={true} /> */}
 
-<ComingSoon></ComingSoon>
+{/* <ComingSoon></ComingSoon> */}
+<QuranBanner></QuranBanner>
 {/* <Lottie
   animationData={animationData}
   loop={true}

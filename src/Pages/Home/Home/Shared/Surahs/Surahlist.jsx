@@ -9,7 +9,7 @@ const SurahList = () => {
   const [filteredSurahs, setFilteredSurahs] = useState([]);
 
   useEffect(() => {
-    fetch("/public/bn.json")
+    fetch("bn.json")
       .then((res) => res.json())
       .then((data) => {
         setList(data);
@@ -30,7 +30,7 @@ const SurahList = () => {
 
 
   return (
-    <div className="bg-[#FEFBF1]" >
+    <div className="bg-[#172542] " >
       <Helmet>
         <title> Quran </title>
       </Helmet>
@@ -58,12 +58,12 @@ const SurahList = () => {
       </div>
       </div>
 
-      <div className="  grid-cols-1 grid md:grid-cols-3 md:grid-rows-3 gap-4  " >
+      <div className="  grid-cols-1 grid md:grid-cols-5 md:grid-rows-3 gap-4  " >
         {(searchInput === '' ? list : filteredSurahs).map((item) => (
           <div
           
           key={item.id}
-          className=" mx-4 mt-8 shadow-xl    rounded-r-3xl rounded-l-3xl border border-green-500 border-1  p-4  mb-6  group hover:bg-black bg-[#F6F1E0]"
+          className=" mx-4 mt-12 shadow-xl    rounded-r-2xl rounded-l-2xl border border-white border-1  p-4  mb-6  group hover:bg-black bg-white "
           // hover: ransition duration-300 ease-in-out hover:scale-110
           // style={{ width: "300px", height: "390px" }}
         >
