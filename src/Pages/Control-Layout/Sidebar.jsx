@@ -20,7 +20,7 @@ const Sidebar = () => {
                     <div key={index}>
                          <NavLink
       to={item.path}
-      className="menu w-auto h-auto border rounded bg-base-100 menu-normal lg:menu-normal mt-4 flex flex-col items-center justify-center  focus:ring-2 focus:ring-blue-500 focus:outline-none active:ring-2 active:ring-blue-700 shadow-md ml-4"
+      className="menu  h-auto border rounded bg-base-100 menu-normal lg:menu-normal mt-4 flex flex-col items-center justify-center  focus:ring-2 focus:ring-blue-500 focus:outline-none active:ring-2 active:ring-blue-700 shadow-md ml-4 md:w-24 "
     >
       <div className='flex items-center justify-center'>
         <span className='w-4 h-4 mr-4'>{item.image}</span>

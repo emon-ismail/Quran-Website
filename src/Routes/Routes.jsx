@@ -2,12 +2,14 @@ import {
     createBrowserRouter,
     
   } from "react-router-dom";
-import Main from "../Layout/Main";
+
 import Home from "../Pages/Home/Home/Home";
 import SurahList from "../Pages/Home/Home/Shared/Surahs/Surahlist";
 import SuraDetails from "../Pages/Home/Home/Shared/Surahs/SuraDetails";
-import Duas from "../Pages/Home/Home/Shared/Duas/Duas";
+
 import Hadis from "../Pages/Home/Home/Shared/Hadis/Hadis.jsx";
+import DuasList from "../Pages/Home/Home/Shared/Duas/DuasList";
+import MainPage from "../Pages/Control-Layout/MainPage";
 
 
 
@@ -15,10 +17,10 @@ import Hadis from "../Pages/Home/Home/Shared/Hadis/Hadis.jsx";
   export const router = createBrowserRouter([
     {
       path: "/",
-      element: <Main></Main>,
+      element: <MainPage></MainPage>,
       children:[
         {
-            path:'*',
+            path:'/',
             element:<Home></Home>
         },
         {
@@ -33,13 +35,10 @@ import Hadis from "../Pages/Home/Home/Shared/Hadis/Hadis.jsx";
               path: '/hadis',
               element: <Hadis/>,
             },
+         
             {
               path: '/duas',
-              element: <Duas></Duas>,
-            },
-            {
-              path: '/duas',
-              element: <Duas></Duas>,
+              element: <DuasList></DuasList>,
             },
       ]
     },

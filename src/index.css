@@ -6,41 +6,7 @@
 /* Base styles for both active and normal links */
 
 
-@font-face {
-  font-family: 'Quran Surah 2';
-  src: url('QuranSurah2.woff2') format('woff2'),
-      url('QuranSurah2.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: 'Quran Surah 1';
-  src: url('QuranSurah1.woff2') format('woff2'),
-      url('QuranSurah1.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Quran Surah 02';
-  src: url('QuranSurah02.woff2') format('woff2'),
-      url('QuranSurah02.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Quran Surah 01';
-  src: url('QuranSurah01.woff2') format('woff2'),
-      url('QuranSurah01.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 
 
@@ -70,6 +36,16 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: '110_Besmellah';
+  src: url('110_Besmellah.woff2') format('woff2'),
+      url('110_Besmellah.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 .btn__sider{

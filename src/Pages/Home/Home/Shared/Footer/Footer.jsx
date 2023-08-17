@@ -2,9 +2,9 @@
 
 const Footer = () => {
     return (
-      <footer className="footer items-center p-4  bg-[#1C3F39] text-neutral-content">
+      <footer className="footer items-center p-4  bg-[#2c364f] text-neutral-content">
       <div className="items-center grid-flow-col  mx-auto ">
-      <img src="/src/assets/icon/icon5.png" alt="Icon" className="w-20 h-30 "/>
+      <img src="/src/assets/icon/icon5.png" alt="Icon" className="w-10 h-30 "/>
      
         <p>Copyright © 2023 - All right reserved</p>
       </div> 

@@ -5,6 +5,7 @@ import Sidebar from "..//Control-Layout/Sidebar";
 
 import NavPage from "./Navpage";
 import NavBar from "../Home/Home/Shared/Navbar/Navbar";
+import Footer from "../Home/Home/Shared/Footer/Footer";
 // import Sidebar from './Sidebar'
 
 const MainPage = () => {
@@ -30,6 +31,7 @@ const MainPage = () => {
     <NavPage />
   </div>
 </div>
+<Footer></Footer>
 
       </section>
     </React.Fragment>

@@ -2,6 +2,7 @@ import * as FaIcons from "react-icons/fa";
 import img1 from "./../../../../../assets/icon/home4.png";
 import img2 from "./../../../../../assets/icon/quran2.png";
 import img3 from "./../../../../../assets/icon/hadis.png";
+import img4 from "./../../../../../assets/icon/doa.png";
 
 export const SidebarData=[
     {
@@ -21,9 +22,13 @@ export const SidebarData=[
         title: "Hadith",
         path: "/hadis",
         icon: <FaIcons.FaGit />,
-        image: <img src={img3} alt="Hadith Icon" />,
-        
-        
+        image: <img src={img3} alt="Hadith Icon" />,  
+      },
+      {
+        title: "Duas",
+        path: "/duas",
+        icon: <FaIcons.FaGit />,
+        image: <img src={img4} alt="Hadith Icon" />,  
       },
     
     //   {

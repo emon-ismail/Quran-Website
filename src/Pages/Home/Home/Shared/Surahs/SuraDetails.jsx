@@ -34,23 +34,25 @@ const SurahDetails = () => {
     {selectedSurah.verses.map((verse) => (
       <div
         key={`${verse.id}-${verse.chapter}-${verse.verse}`}
-        className="p-4 my-4 bg-[#23304B]  container mx-auto "
+        className="p-4  bg-[#23304B]  container mx-auto "
       >
         <div className="text-lg font-bold tracking-tight text-right text-black">
           <p>
           {/* className="font-uthman-taha font-normal font-weight-400 text-3xl leading-9 p-8 text-[#1B365C]" */}
             <span className="text-[#6F6F8E] my-4  flex justify-between">
-             <div className="text-[#30A961]"> {verse.id} .{" "}</div>
+             <div className="text-[#30A961] font-roboto"> {verse.id} .{" "}</div>
               
-              <div className="text-white font-al-qalam  font-normal font-weight-400 text-3xl leading-9">
+              <div className="text-white font-al-qalam  font-normal font-weight-400 text-3xl leading-loose">
               {verse.text}
               </div>
               
             </span>{" "}
           </p>
-          <p className="text-left font-roboto font-normal font-weight-400 text-lg font-roboto pt-8 leading-12 text-white">
-             {verse.translation}
-          </p>
+          <p className="text-left font-roboto font-normal font-weight-400 text-lg font-roboto pt-8 leading-loose text-white mt-8">
+  <div className="pb-8 border-b border-gray-300">{verse.translation}</div>
+</p>
+
+      
         </div>
       </div>
     ))}

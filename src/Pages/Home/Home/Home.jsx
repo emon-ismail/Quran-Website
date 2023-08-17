@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
-import Duas from "./Shared/Duas/Duas";
-import Sidebar from "./Shared/Navbar/Sidebar";
-import ComingSoon from "../../../Components/Animation/ComingSoon";
+// import Duas from "./Shared/Duas/DuasList";
+// import Sidebar from "./Shared/Navbar/Sidebar";
+// import ComingSoon from "../../../Components/Animation/ComingSoon";
 import QuranBanner from "../../../Components/Quran-Banner/QuranBanner";
 
 // import Surahlist from "./Shared/Surahs/Surahlist";

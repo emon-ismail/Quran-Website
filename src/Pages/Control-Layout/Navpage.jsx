@@ -13,6 +13,7 @@ import Home from "../Home/Home/Home";
 import SurahList from "../Home/Home/Shared/Surahs/Surahlist";
 import Hadis from "../Home/Home/Shared/Hadis/Hadis";
 import SurahDetails from "../Home/Home/Shared/Surahs/SuraDetails";
+import DuaList from "../Home/Home/Shared/Duas/DuasList";
 
 const NavPage = () => {
   return (
@@ -23,6 +24,7 @@ const NavPage = () => {
         <Route path="/surah" element={<SurahList />} />
         <Route path="/hadis" element={<Hadis />} />
         <Route path="/surah/:id" element={<SurahDetails />} />
+        <Route path="/duas" element={<DuaList />} />
         {/* <Route path="/php" element={<Php />} />
         <Route path="/figma" element={<Figma />} />
         <Route path="/git" element={<Git />} />

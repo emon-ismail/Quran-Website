@@ -18,10 +18,7 @@ export default {
       fontFamily: {
         'uthman-taha': ['KFGQPC Uthman Taha Naskh', ],
         'al-qalam': ['Al Qalam Quran', 'sans-serif'],
-        'quran-surah-1': ['Quran Surah 1', 'sans'],
-        'quran-surah-2': ['Quran Surah 2', 'sans'],
-        'quran-surah-01': ['Quran Surah 01', 'sans'],
-        'quran-surah-02': ['Quran Surah 02', 'sans'],
+        
         
       },
     },
