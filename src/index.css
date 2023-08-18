@@ -94,6 +94,7 @@
  z-index: 1; 
 }
 
+
 .active {
   color:#34d399;
   background: #000;
@@ -172,14 +173,28 @@
   .nokia__8110 {
 
     width: auto; 
-    font-size: 12px; 
+    font-size: 8px; 
+    margin: 0px;
 
-    background: white;
+    background: black;
+    padding: 0px;
+    font-weight: normal;
     
   }
 
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 4) {
+  .nokia__8110 {
+
+    width: auto; 
+    font-size: 12px; 
+    line-height: normal;
+
+    background: white;
+    
+  }
+}
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .ipad__mini-design {

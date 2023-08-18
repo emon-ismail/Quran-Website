@@ -1,7 +1,7 @@
 import  { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-
+import searchicon from "/src/assets/icon/search.png"
 
 const SurahList = () => {
   const [list, setList] = useState([]);
@@ -32,7 +32,7 @@ const SurahList = () => {
   return (
     <div className="bg-[#172542] " >
       <Helmet>
-        <title> Quran </title>
+        <title> Quran-Hadith |  Surah-List</title>
       </Helmet>
     
       <div className="pt-32   input-success mx-auto max-w-lg max-sm:w-[10]select__container-search">
@@ -41,7 +41,7 @@ const SurahList = () => {
       <div className="flex items-center  p-2  ">
       
       <div className="mr-2">
-        <img src="/src/assets/icon/search.png" alt="Search Icon" className="w-10 h-10" />
+        <img src={searchicon} alt="Search Icon" className="w-10 h-10" />
       </div>
       <input 
       
