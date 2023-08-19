@@ -18,6 +18,7 @@ export default {
       fontFamily: {
         'uthman-taha': ['KFGQPC Uthman Taha Naskh', ],
         'al-qalam': ['Al Qalam Quran', 'sans-serif'],
+        'noticia': ['Noticia Text', 'serif'],
         
         
       },

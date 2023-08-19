@@ -6,7 +6,7 @@
 /* Base styles for both active and normal links */
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
 
 
 
@@ -174,11 +174,8 @@
 
     width: auto; 
     font-size: 8px; 
-    margin: 0px;
-
-    background: black;
-    padding: 0px;
-    font-weight: normal;
+  
+ 
     
   }
 

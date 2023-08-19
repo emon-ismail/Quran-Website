@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ReadingQuran from '../../../../../Components/Animation/ReadingQuran';
 import cover from '../../../../../assets/home/cover.jpg';
 import { Link } from 'react-router-dom';
@@ -24,7 +24,7 @@ const Cover = () => {
           <div className="w-full lg:w-1/2 max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h1 className="text-3xl font-extrabold sm:text-5xl">
               Read Quran Everyday.
-              <strong className="block font-extrabold text-rose-700 mt-4">
+              <strong className="block font-extrabold text-rose-700 mt-4 mb-4">
                 Add On Your Daily Routine.
               </strong>
             </h1>

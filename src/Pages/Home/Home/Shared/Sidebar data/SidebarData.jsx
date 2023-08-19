@@ -3,6 +3,7 @@ import img1 from "./../../../../../assets/icon/home4.png";
 import img2 from "./../../../../../assets/icon/quran2.png";
 import img3 from "./../../../../../assets/icon/hadis.png";
 import img4 from "./../../../../../assets/icon/doa.png";
+import img5 from "./../../../../../assets/icon/quiz.png";
 
 export const SidebarData=[
     {
@@ -29,6 +30,12 @@ export const SidebarData=[
         path: "/duas",
         icon: <FaIcons.FaGit />,
         image: <img src={img4} alt="Hadith Icon" />,  
+      },
+      {
+        title: "Quiz",
+        path: "/quiz",
+        icon: <FaIcons.FaGit />,
+        image: <img src={img5} alt="Hadith Icon" />,  
       },
     
     //   {

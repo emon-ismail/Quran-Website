@@ -8,6 +8,7 @@ import Hadis from "../Pages/Home/Home/Shared/Hadis/Hadis.jsx";
 import DuasList from "../Pages/Home/Home/Shared/Duas/DuasList";
 import MainPage from "../Pages/Control-Layout/MainPage";
 import FourOfour from "../Components/Animation/fourOfour";
+import Quiz from "../Pages/Home/Home/Shared/Quizes/Quiz";
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
       {
         path: '/duas',
         element: <DuasList></DuasList>,
+      },
+      {
+        path: '/quiz',
+        element: <Quiz></Quiz>,
       },
       {
         path: "*",

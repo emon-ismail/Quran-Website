@@ -3,10 +3,7 @@ import {SidebarData} from '../../Pages/Home/Home/Shared/Sidebar data/SidebarData
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-    // const activeLink = '  active mt-7 pl-7  h-14 flex justify-start items-center text-white text-2xl space-x-1 font-bold bg-red-500'
-    // const activeLink = '  hover:bg-black  bg-black px-7 font-roboto mt-7 btn   flex justify-center items-center hover:text-white text-green-500 text-2xl space-x-1 font-bold   btn-xs sm:btn-sm md:btn-md lg:btn-lg '
-
-    // const normalLink = 'hover:text-white hover:bg-black  text-black font-roboto px-7 mt-7 btn flex justify-center items-center text-2xl space-x-1 font-bold btn-xs sm:btn-sm md:btn-md lg:btn-lg ';
+ 
     
 
 

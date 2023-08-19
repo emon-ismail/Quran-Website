@@ -1,0 +1,133 @@
+[
+    {
+      "question": "Which Islamic month marks the annual pilgrimage to Mecca?",
+      "options": {
+        "1": "Shawwal",
+        "2": "Dhu al-Qi'dah",
+        "3": "Rajab",
+        "4": "Safar"
+      },
+      "correct_option": {
+        "number": "2",
+        "text": "Dhu al-Qi'dah"
+      }
+    },
+    {
+      "question": "What is the term for the charitable giving of a portion of one's wealth to those in need?",
+      "options": {
+        "1": "Zakat",
+        "2": "Sawm",
+        "3": "Hajj",
+        "4": "Salah"
+      },
+      "correct_option": {
+        "number": "1",
+        "text": "Zakat"
+      }
+    },
+    {
+      "question": "In Islam, who is considered the last and final prophet?",
+      "options": {
+        "1": "Prophet Musa (Moses)",
+        "2": "Prophet Isa (Jesus)",
+        "3": "Prophet Muhammad",
+        "4": "Prophet Ibrahim (Abraham)"
+      },
+      "correct_option": {
+        "number": "3",
+        "text": "Prophet Muhammad"
+      }
+    },
+    {
+      "question": "Which Islamic scholar is famous for compiling the collection of hadith known as Sahih al-Bukhari?",
+      "options": {
+        "1": "Imam Malik",
+        "2": "Imam Abu Hanifa",
+        "3": "Imam Ahmad ibn Hanbal",
+        "4": "Imam al-Bukhari"
+      },
+      "correct_option": {
+        "number": "4",
+        "text": "Imam al-Bukhari"
+      }
+    },
+    {
+      "question": "What is the name of the Black Stone that Muslims believe was given to Ibrahim (Abraham) by the angel Gabriel?",
+      "options": {
+        "1": "Hajar al-Aswad",
+        "2": "Hajar al-Makki",
+        "3": "Hajar al-Zamzam",
+        "4": "Hajar al-Tawaf"
+      },
+      "correct_option": {
+        "number": "1",
+        "text": "Hajar al-Aswad"
+      }
+    },
+    {
+      "question": "Which Islamic art of calligraphy is often used to decorate mosques and religious texts?",
+      "options": {
+        "1": "Naskh",
+        "2": "Thuluth",
+        "3": "Diwani",
+        "4": "Ruq'ah"
+      },
+      "correct_option": {
+        "number": "2",
+        "text": "Thuluth"
+      }
+    },
+    {
+      "question": "What is the Islamic term for the pilgrimage to Mecca that is obligatory for every adult Muslim who is physically and financially capable?",
+      "options": {
+        "1": "Salah",
+        "2": "Sawm",
+        "3": "Hijrah",
+        "4": "Hajj"
+      },
+      "correct_option": {
+        "number": "4",
+        "text": "Hajj"
+      }
+    },
+    {
+      "question": "What is the Arabic word for fasting during the month of Ramadan from dawn until sunset?",
+      "options": {
+        "1": "Iqama",
+        "2": "Salat",
+        "3": "Sawm",
+        "4": "Zakat"
+      },
+      "correct_option": {
+        "number": "3",
+        "text": "Sawm"
+      }
+    },
+    {
+      "question": "In Islamic jurisprudence, what is the term for the lawful and unlawful aspects of life?",
+      "options": {
+        "1": "Sunna and Hadith",
+        "2": "Halal and Haram",
+        "3": "Iman and Kufr",
+        "4": "Tafsir and Ijma"
+      },
+      "correct_option": {
+        "number": "2",
+        "text": "Halal and Haram"
+      }
+    },
+    {
+      "question": "Which Islamic month is known as the 'Month of Mercy'?",
+      "options": {
+        "1": "Shaban",
+        "2": "Rabi al-Awwal",
+        "3": "Rajab",
+        "4": "Ramadan"
+      },
+      "correct_option": {
+        "number": "4",
+        "text": "Ramadan"
+      }
+    }
+  ]
+  

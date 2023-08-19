@@ -72,6 +72,11 @@ export default function NavBar() {
                                     Duas
                                 </NavLink>
                             </li>
+                            <li className="text-white hover:text-indigo-200">
+                                <NavLink to="/quiz" onClick={toggleNavbar}>
+                                    Quiz
+                                </NavLink>
+                            </li>
                         </ul>
                         <div className="mt-3 space-y-2 md:hidden">
                             <a
