@@ -51,7 +51,7 @@ const RandomAyah = () => {
   };
 
   return (
-    <main className="text-center p-8 mt-16 ">
+    <main className="text-center p-4 mt-1 ">
    
      <div className='bg-[#23304B]'>
      <div className="mt-8 ">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "/src/assets/icon/icon5.png";
-import porfolio from "../../../../../assets/icon/portfolio (1).png";
+import porfolio from "../../../../../assets/icon/port.png";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -100,7 +100,7 @@ export default function NavBar() {
                         <img
                             src={porfolio}
                             alt="Icon"
-                            width="55"
+                            width="62"
                             height="20"
                             style={{ maxWidth: "100%" }}
                         />
