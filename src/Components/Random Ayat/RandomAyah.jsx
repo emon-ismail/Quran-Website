@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const RandomAyah = () => {
   const [arabicAyah, setArabicAyah] = useState('');
@@ -6,36 +6,25 @@ const RandomAyah = () => {
   const [suraName, setSuraName] = useState('');
   const [ayahNum, setAyahNum] = useState('');
   const [audioSrc, setAudioSrc] = useState('');
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const generateRandomNum = () => {
     return Math.floor(Math.random() * 6236);
   };
 
   useEffect(() => {
-    const randomNum = generateRandomNum();
-
-    const arabicApi = `https://api.alquran.cloud/v1/ayah/${randomNum}/ar.alafasy`;
-    const banglaApi = `https://api.alquran.cloud/v1/ayah/${randomNum}/bn.bengali`;
-
-    fetch(arabicApi)
-      .then(response => response.json())
-      .then(data => {
-        setArabicAyah(data.data.text);
-        setSuraName(data.data.surah.englishName);
-        setAyahNum(data.data.numberInSurah);
-        setAudioSrc(data.data.audio);
-      });
-
-    fetch(banglaApi)
-      .then(response => response.json())
-      .then(data => {
-        setBanglaAyah(data.data.text);
-      });
+    handleGenerate();
   }, []);
 
   const handlePlayAudio = () => {
     const audio = new Audio(audioSrc);
+    setIsPlaying(true);
+
     audio.play();
+
+    audio.addEventListener('ended', () => {
+      setIsPlaying(false);
+    });
   };
 
   const handleGenerate = () => {
@@ -67,10 +56,10 @@ const RandomAyah = () => {
       });
 
     // Scroll to the newly generated content
-    const generatedContent = document.getElementById('generated-content');
-    if (generatedContent) {
-      generatedContent.scrollIntoView({ behavior: 'smooth' });
-    }
+    // const generatedContent = document.getElementById('generated-content');
+    // if (generatedContent) {
+    //   generatedContent.scrollIntoView({ behavior: 'smooth' });
+    // }
   };
 
   const generateWhatsAppUrl = (arabicText, banglaText, surahInfo) => {
@@ -92,9 +81,9 @@ const RandomAyah = () => {
             আল কুরআন • সুরা - {suraName} • আয়াত - {ayahNum}
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-4 px-4 py-8  rounded">
           <audio src={audioSrc}></audio>
-          <button onClick={handlePlayAudio} className="btn-play bg-blue-500 text-white px-4 py-2 rounded mr-2">
+          <button onClick={handlePlayAudio} className={`btn-play bg-blue-500 text-white px-4 py-2 rounded mr-2 ${isPlaying ? 'disabled' : ''}`} disabled={isPlaying}>
             <i className="fas fa-play mr-1"></i> Play
           </button>
           <a
@@ -106,9 +95,9 @@ const RandomAyah = () => {
             <i className="fab fa-whatsapp mr-1"></i> Share on WhatsApp
           </a>
         </div>
-        <button onClick={handleGenerate} className="btn-generate bg-gray-500 text-white px-4 py-2 mb-8 rounded">
+        {/* <button onClick={handleGenerate} className="btn-generate bg-gray-500 text-white px-4 py-2 mb-8 rounded" disabled>
           <i className="fas fa-cog mr-1"></i> Generate
-        </button>
+        </button> */}
       </div>
     </main>
   );
