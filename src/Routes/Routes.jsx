@@ -9,6 +9,7 @@ import DuasList from "../Pages/Home/Home/Shared/Duas/DuasList";
 import MainPage from "../Pages/Control-Layout/MainPage";
 import FourOfour from "../Components/Animation/fourOfour";
 import Quiz from "../Pages/Home/Home/Shared/Quizes/Quiz";
+import Login from "../Pages/Login/Login";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
       {
         path: "*",
         element: <FourOfour></FourOfour>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
       },
     ],
   },

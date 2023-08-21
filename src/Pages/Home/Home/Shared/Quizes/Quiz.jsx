@@ -20,7 +20,7 @@ const Quiz = () => {
   useEffect(() => {
     const fetchQuizData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/quiz');
+        const response = await fetch('../../../../../../public/quiz.json');
         if (response.ok) {
           const data = await response.json();
           const shuffledQuestions = shuffleArray(data).slice(0, 10);

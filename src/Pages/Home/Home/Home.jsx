@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 // import ComingSoon from "../../../Components/Animation/ComingSoon";
-import RandomAyah from "../../../Components/Random Ayat/RandomAyah";
+import RandomAyah from "./Shared/Random Ayat/RandomAyah";
 import Cover from "./Shared/Cover/Cover";
 
 

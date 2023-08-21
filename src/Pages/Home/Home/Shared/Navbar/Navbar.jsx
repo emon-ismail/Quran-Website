@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "/src/assets/icon/icon5.png";
-import porfolio from "../../../../../assets/icon/port.png";
+// import porfolio from "../../../../../assets/icon/port.png";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -24,6 +24,8 @@ export default function NavBar() {
                                 >
                                     Quran-Hadith
                                 </Link>
+
+                              
                             </div>
                         </a>
                         <div className="md:hidden">
@@ -79,7 +81,9 @@ export default function NavBar() {
                             </li>
                         </ul>
                         <div className="mt-3 space-y-2 md:hidden">
-                            <a
+
+                        <Link to='login' onClick={toggleNavbar}  className="btn btn-outline btn-accent text-white">Login</Link>
+                            {/* <a
                                 href="https://isemon.netlify.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -92,12 +96,14 @@ export default function NavBar() {
                                     height="20"
                                     style={{ maxWidth: "100%" }}
                                 />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
                 <div className="hidden space-x-2 md:inline-block">
-                    <a
+
+                <Link to='login' className="btn btn-outline btn-accent text-white">Login</Link>
+                    {/* <a
                         href="https://isemon.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -109,7 +115,7 @@ export default function NavBar() {
                             height="20"
                             style={{ maxWidth: "100%" }}
                         />
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </nav>
