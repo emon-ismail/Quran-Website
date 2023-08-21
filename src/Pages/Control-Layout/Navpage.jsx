@@ -12,13 +12,12 @@ const NavPage = () => {
     <React.Fragment>
       <section>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/surah" element={<SurahList />} />
-        <Route path="/hadis" element={<Hadis />} />
-        <Route path="/surah/:id" element={<SurahDetails />} />
-        <Route path="/duas" element={<DuaList />} />
-        <Route path="/quiz" element={<Quiz />} />
-
+          <Route path="/" element={<Home />} />
+          <Route path="/surah" element={<SurahList />} />
+          <Route path="/hadis" element={<Hadis />} />
+          <Route path="/surah/:id" element={<SurahDetails />} />
+          <Route path="/duas" element={<DuaList />} />
+          <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </section>
     </React.Fragment>

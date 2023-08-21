@@ -1,10 +1,7 @@
-import quizData from '../../../../../../public/quiz.json';
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import cover from '../../../../../assets/home/cover.jpg';
 
 const Quiz = () => {
-  const backgroundImage = `url(${cover})`;
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState({});
@@ -21,8 +18,22 @@ const Quiz = () => {
   };
 
   useEffect(() => {
-    const shuffledQuestions = shuffleArray(quizData).slice(0, 10);
-    setQuizQuestions(shuffledQuestions);
+    const fetchQuizData = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/quiz');
+        if (response.ok) {
+          const data = await response.json();
+          const shuffledQuestions = shuffleArray(data).slice(0, 10);
+          setQuizQuestions(shuffledQuestions);
+        } else {
+          console.error('Failed to fetch quiz data');
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchQuizData();
   }, []);
 
   const handleAnswerSelect = (selectedOption) => {
@@ -146,11 +157,11 @@ const Quiz = () => {
               You got {calculateScore()} out of {quizQuestions.length} correct!
             </p>
             <button
-  className="btn bg-white text-black hover:text-[#7cff80] hover:bg-black mt-16 mb-12 block mx-auto"
-  onClick={() => window.my_modal_2.showModal()}
->
-  Show Results
-</button>
+              className="btn bg-white text-black hover:text-[#7cff80] hover:bg-black mt-16 mb-12 block mx-auto"
+              onClick={() => window.my_modal_2.showModal()}
+            >
+              Show Results
+            </button>
             <dialog id="my_modal_2" className="modal">
               <form method="dialog" className="modal-box">
                 <h3 className="font-bold text-xl  text-center">Results:</h3>
