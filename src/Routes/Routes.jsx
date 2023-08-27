@@ -10,6 +10,8 @@ import MainPage from "../Pages/Control-Layout/MainPage";
 import FourOfour from "../Components/Animation/fourOfour";
 import Quiz from "../Pages/Home/Home/Shared/Quizes/Quiz";
 import Login from "../Pages/Login/Login";
+import SignUp from "../SignUp/SignUp";
+import Shop from "../Pages/Shop/Shop";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ export const router = createBrowserRouter([
       {
         path: "login",
         element: <Login></Login>,
+      },
+      {
+        path: "signup",
+        element: <SignUp></SignUp>,
+      },
+      {
+        path: "/shop",
+        element: <Shop></Shop>,
       },
     ],
   },

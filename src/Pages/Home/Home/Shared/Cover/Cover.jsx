@@ -1,4 +1,4 @@
-
+import React from 'react';
 import ReadingQuran from '../../../../../Components/Animation/ReadingQuran';
 import cover from '../../../../../assets/home/cover.jpg';
 import { Link } from 'react-router-dom';
@@ -22,32 +22,33 @@ const Cover = () => {
           </div>
 
           <div className="w-full lg:w-1/2 max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-extrabold sm:text-5xl">
+            <h1 className="text-3xl font-extrabold sm:text-5xl text-black">
               Read Quran Everyday.
               <strong className="block font-extrabold text-rose-700 mt-4 mb-4">
                 Add On Your Daily Routine.
               </strong>
             </h1>
 
-            <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+            <p className="mt-4 max-w-lg sm:text-xl/relaxed text-black">
               রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম বলেন : কোরআনে কারিম তিলাওয়াত সর্বোত্তম ইবাদত।
               <br />
               (বুখারি)
-<br />
-              <p className='mt-2 max-w-lg sm:text-xl/relaxed'>The Messenger of Allah (peace and blessings be upon him) said: The recitation of the Noble Quran is the best form of worship.
-(Bukhari)</p>
+              <br />
+              <span className="mt-2 max-w-lg sm:text-xl/relaxed text-black">
+                The Messenger of Allah (peace and blessings be upon him) said: The recitation of the Noble Quran is the best form of worship. (Bukhari)
+              </span>
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
               <Link
-               to='/surah'
+                to="/surah"
                 className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 lg:w-auto"
               >
                 Read Quran
               </Link>
 
               <Link
-            to='/hadis'
+                to="/hadis"
                 className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 lg:w-auto"
               >
                 Read Hadith

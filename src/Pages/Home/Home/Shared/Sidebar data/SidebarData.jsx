@@ -37,6 +37,12 @@ export const SidebarData=[
         icon: <FaIcons.FaGit />,
         image: <img src={img5} alt="Hadith Icon" />,  
       },
+      {
+        title: "Shop",
+        path: "/shop",
+        icon: <FaIcons.FaGit />,
+        image: <img src={img5} alt="Hadith Icon" />,  
+      },
     
     //   {
     //     title: "CSS",

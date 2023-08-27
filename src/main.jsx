@@ -11,27 +11,28 @@ import {
 
 import {
 
-  BrowserRouter, 
+
   // RouterProvider,
 }  from "react-router-dom";
 // import App from './App';
 import { router } from './Routes/Routes';
+import AuthProvider from './Providers/AuthProvider';
 
 // import { router } from './Routes/Routes.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-    {/* <App></App> */}
-    </BrowserRouter>
+
  
+<AuthProvider>
 <HelmetProvider>
-
-
 <div >
  <RouterProvider router={router} />
  </div>
 </HelmetProvider>
+</AuthProvider>
+
+
   </React.StrictMode>,
 )

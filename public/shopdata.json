@@ -1,0 +1,50 @@
+{
+    "products": [
+      {
+        "product_name": "Blue Classic T-Shirt",
+        "product_price": 19.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      },
+      {
+        "product_name": "Red Graphic Print Tee",
+        "product_price": 24.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      },
+      {
+        "product_name": "Black V-Neck Shirt",
+        "product_price": 18.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      },
+      {
+        "product_name": "White Basic Tee",
+        "product_price": 15.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      },
+      {
+        "product_name": "Green Striped Polo",
+        "product_price": 29.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      },
+      {
+        "product_name": "Green Striped Polo",
+        "product_price": 29.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      },
+      {
+        "product_name": "Green Striped Polo",
+        "product_price": 29.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      },
+      {
+        "product_name": "Green Striped Polo",
+        "product_price": 29.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      },
+      {
+        "product_name": "Green Striped Polo",
+        "product_price": 29.99,
+        "product_picture": "https://teashirthut.com/wp-content/uploads/2023/03/ISL07.jpg"
+      }
+    ]
+  }
+  

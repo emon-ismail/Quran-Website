@@ -7,6 +7,8 @@ import SurahDetails from "../Home/Home/Shared/Surahs/SuraDetails";
 import DuaList from "../Home/Home/Shared/Duas/DuasList";
 import Quiz from "../Home/Home/Shared/Quizes/Quiz";
 import Login from "../Login/Login";
+import SignUp from "../../SignUp/SignUp";
+import Shop from "../Shop/Shop";
 
 const NavPage = () => {
   return (
@@ -20,6 +22,8 @@ const NavPage = () => {
           <Route path="/duas" element={<DuaList />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp></SignUp>} />
+          <Route path="/shop" element={<Shop></Shop>} />
         </Routes>
       </section>
     </React.Fragment>
