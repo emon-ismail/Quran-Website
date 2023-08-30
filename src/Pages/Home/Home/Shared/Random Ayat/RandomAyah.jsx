@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { FaAffiliatetheme, FaPlay, FaPlayCircle, FaShare } from 'react-icons/fa';
+// import { AiFillPlayCircle} from 'react-icons/fa';
 
 const RandomAyah = () => {
   const [arabicAyah, setArabicAyah] = useState('');
@@ -71,7 +73,7 @@ const RandomAyah = () => {
 
   return (
     <main className="text-center p-4 mt-1" id="generated-content">
-      <div className='bg-[#23304B]'>
+      <div className='bg-[#23304B] p-4'>
         <div className="mt-8">
           <h1 className='text-green-400 py-8 pb-4 text-xl md:font-semibold'>Random Ayah of the Day</h1>
           <h1 className=' border-b border-green-400 border-w-40 mt-2 mb-8 '></h1>
@@ -81,18 +83,19 @@ const RandomAyah = () => {
             আল কুরআন • সুরা - {suraName} • আয়াত - {ayahNum}
           </p>
         </div>
-        <div className="mb-4 px-4 py-8  rounded">
+        <div className="mb-4 px-1 py-8  rounded ">
           <audio src={audioSrc}></audio>
-          <button onClick={handlePlayAudio} className={`btn-play bg-blue-500 text-white px-4 py-2 rounded mr-2 ${isPlaying ? 'disabled' : ''}`} disabled={isPlaying}>
-            <i className="fas fa-play mr-1"></i> Play
+          <button onClick={handlePlayAudio} className={`btn-play btn btn-info  ${isPlaying ? 'disabled' : ''}`} disabled={isPlaying}>
+            <i className=" mr-1">  <FaPlay/> </i>
+             Play
           </button>
           <a
             href={generateWhatsAppUrl(arabicAyah, banglaAyah, `${suraName} • আয়াত - ${ayahNum}`)}
             target="_blank"
             rel="noopener noreferrer"
-            className="whatsapp-share bg-green-500 text-white px-4 py-2 rounded"
+            className="whatsapp-share bg-green-500  btn btn-success btn-wide m-4 nokia__8110"
           >
-            <i className="fab fa-whatsapp mr-1"></i> Share on WhatsApp
+            <i className="fab fa-whatsapp mr-1"> <FaShare></FaShare> </i> Share on WhatsApp
           </a>
         </div>
         {/* <button onClick={handleGenerate} className="btn-generate bg-gray-500 text-white px-4 py-2 mb-8 rounded" disabled>

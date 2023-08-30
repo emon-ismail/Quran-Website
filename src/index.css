@@ -93,11 +93,14 @@
   top: 100px; 
  z-index: 1; 
 }
-
+.btn-active{
+  background-color: green;
+}
 
 .active {
-  color:white;
-  background: #000;
+  
+  background: black;
+color:#7CFD7C;
   border: 4px solid;
   padding: 9px;
 
@@ -174,6 +177,17 @@
 
     width: auto; 
     font-size: 8px; 
+  
+  
+ 
+    
+  }
+  .nokia__8110-flex {
+
+    width: auto; 
+    font-size: 3px; 
+    display: grid;
+    grid-template-columns: 90px 50px 50px;
   
  
     

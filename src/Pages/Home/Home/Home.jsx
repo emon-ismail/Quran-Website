@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 // import ComingSoon from "../../../Components/Animation/ComingSoon";
 import RandomAyah from "./Shared/Random Ayat/RandomAyah";
 import Cover from "./Shared/Cover/Cover";
+import Amal from "../../../Components/Amal/Amal";
 
 
 
@@ -20,8 +21,7 @@ const Home = () => {
 
 <RandomAyah></RandomAyah>
 {/* <ComingSoon></ComingSoon> */}
-
-
+<Amal></Amal>
         </div>
     );
 };

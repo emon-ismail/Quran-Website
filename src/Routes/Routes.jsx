@@ -12,6 +12,8 @@ import Quiz from "../Pages/Home/Home/Shared/Quizes/Quiz";
 import Login from "../Pages/Login/Login";
 import SignUp from "../SignUp/SignUp";
 import Shop from "../Pages/Shop/Shop";
+import SeeMore from "../Components/Amal/SeeMore";
+import Amal from "../Components/Amal/Amal";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +59,14 @@ export const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop></Shop>,
+      },
+      {
+        path: "/",
+        element: <Amal></Amal>,
+      },
+      {
+        path: "/see-more",
+        element: <SeeMore></SeeMore>,
       },
     ],
   },

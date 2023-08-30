@@ -20,7 +20,7 @@ const Quiz = () => {
   useEffect(() => {
     const fetchQuizData = async () => {
       try {
-        const response = await fetch('../../../../../../public/quiz.json');
+        const response = await fetch('https://quran-hadith-server.vercel.app/quiz');
         if (response.ok) {
           const data = await response.json();
           const shuffledQuestions = shuffleArray(data).slice(0, 10);

@@ -37,6 +37,7 @@ const Login = () => {
                         popup: 'animate__animated animate__fadeOutUp'
                     }
                 });
+
                 navigate(from, { replace: true });
             })
     }
@@ -54,13 +55,13 @@ const Login = () => {
     return (
         <>
             <Helmet>
-                <title>Bistro Boss | Login</title>
+                <title>Quran-Hadith | Login</title>
             </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col md:flex-row-reverse">
                     <div className="text-center md:w-1/2 lg:text-left">
                         <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        {/* <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> */}
                     </div>
                     <div className="card md:w-1/2 max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleLogin} className="card-body">
@@ -90,7 +91,7 @@ const Login = () => {
                                 <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
-                        <p><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
+                        <p className='py-4'><small className='ml-8 '>New Here? <Link to="/signup">Create an account</Link> </small></p>
                     </div>
                 </div>
             </div>

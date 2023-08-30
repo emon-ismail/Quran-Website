@@ -1,26 +1,22 @@
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-// import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2'
 import { AuthContext } from "../Providers/AuthProvider";
 
 const SignUp = () => {
-
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const { createUser, updateUserProfile } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const onSubmit = data => {
-        console.log(data);
+        console.log("Data being sent to backend:", data); // Log the data before sending
+
         createUser(data.email, data.password)
-            .then(result => {
-                const loggedUser = result.user;
-                console.log(loggedUser);
+            .then(() => {
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
-                        console.log('user profile info updated')
                         reset();
                         Swal.fire({
                             position: 'top-end',
@@ -29,23 +25,55 @@ const SignUp = () => {
                             showConfirmButton: false,
                             timer: 1500
                         });
+
+                        // Swal.fire({
+                        //     title: 'Mood OFF ??',
+                        //     icon: 'question',
+                        //     iconHtml: '؟',
+                        //     confirmButtonText: 'YES',
+                        //     cancelButtonText: 'NO',
+                        //     showCancelButton: true,
+                        //     showCloseButton: true
+                        //   })
+
+
+
+                        
+
+                        // Send signup data to the backend
+                        fetch('https://quran-hadith-server.vercel.app/signup', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(data)
+                        })
+                        .then(response => response.json())
+                        .then(responseData => {
+                            console.log(responseData);
+                            // Handle response as needed
+                        })
+                        .catch(error => {
+                            console.error("Error sending signup data:", error);
+                            // Handle error as needed
+                        });
+
                         navigate('/');
-
                     })
-                    .catch(error => console.log(error))
-            })
+                    .catch(error => console.log(error));
+            });
     };
-
+    
     return (
         <>
             <Helmet>
-                <title>Bistro Boss | Sign Up</title>
+                <title>Quran-Hadith | Sign Up</title>
             </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Sign up now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        {/* <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> */}
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">

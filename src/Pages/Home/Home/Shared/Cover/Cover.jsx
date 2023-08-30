@@ -1,6 +1,6 @@
 import React from 'react';
 import ReadingQuran from '../../../../../Components/Animation/ReadingQuran';
-import cover from '../../../../../assets/home/cover.jpg';
+import cover from '../../../../../assets/home/cover-1.jpg';
 import { Link } from 'react-router-dom';
 
 const Cover = () => {

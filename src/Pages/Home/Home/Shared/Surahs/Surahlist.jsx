@@ -63,7 +63,7 @@ const SurahList = () => {
           <div
           
           key={item.id}
-          className=" mx-4 mt-12 shadow-xl    rounded-r-2xl rounded-l-2xl border border-white border-1  p-4  mb-6  group hover:bg-black bg-white "
+          className=" mx-4 mt-12 shadow-[0px_20px_20px_10px_#00000024,0px_3px_8px_2px_#48bb78]   rounded-r-2xl rounded-l-2xl border border-white border-1  p-4  mb-6  group hover:bg-black bg-white "
           // hover: ransition duration-300 ease-in-out hover:scale-110
           // style={{ width: "300px", height: "390px" }}
         >

@@ -9,6 +9,8 @@ import Quiz from "../Home/Home/Shared/Quizes/Quiz";
 import Login from "../Login/Login";
 import SignUp from "../../SignUp/SignUp";
 import Shop from "../Shop/Shop";
+import SeeMore from "../../Components/Amal/SeeMore";
+import Amal from "../../Components/Amal/Amal";
 
 const NavPage = () => {
   return (
@@ -24,6 +26,9 @@ const NavPage = () => {
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp></SignUp>} />
           <Route path="/shop" element={<Shop></Shop>} />
+          <Route path="/" element={<Amal></Amal>} />
+          
+          <Route path="/see-more" element={<SeeMore></SeeMore>} />
         </Routes>
       </section>
     </React.Fragment>

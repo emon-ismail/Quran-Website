@@ -153,14 +153,14 @@ export default function NavBar() {
                     )}
                 </div>
                 <button className={`hidden md:block  btn btn-square btn-ghost `}>
-                    <label className={`swap swap-rotate w-12 h-12`}>
+                    <label className={`swap swap-rotate w-8 h-8`}>
                         <input
                             type="checkbox"
                             onChange={handleToggle}
                             checked={theme === "light" ? false : true}
                         />
-                        <img src={sun} alt="light" className={`w-8 h-8 swap-on`} />
-                        <img src={moon} alt="dark" className={`w-8 h-8 swap-off`} />
+                        <img src={sun} alt="light" className={`w-2 h-2 md:w-8 md:h-8 swap-on`} />
+                        <img src={moon} alt="dark" className={`w-2 h-2 md:w-8 md:h-8 swap-off`} />
                     </label>
                 </button>
             </div>
