@@ -16,7 +16,7 @@ const SocialLogin = () => {
             .then(result => {
                 const loggedInUser = result.user;
                 console.log(loggedInUser);
-                const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email }
+                const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email, photoURL:loggedInUser.photoURL}
                 fetch('https://quran-hadith-server.vercel.app/users', {
                     method: 'POST',
                     headers: {

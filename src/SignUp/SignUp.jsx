@@ -12,57 +12,43 @@ const SignUp = () => {
     const navigate = useNavigate();
 
     const onSubmit = data => {
-        console.log("Data being sent to backend:", data); // Log the data before sending
 
         createUser(data.email, data.password)
-            .then(() => {
+            .then(result => {
+
+                const loggedUser = result.user;
+                console.log(loggedUser);
+
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
-                        reset();
-                        Swal.fire({
-                            position: 'top-end',
-                            icon: 'success',
-                            title: 'User created successfully.',
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-
-                        // Swal.fire({
-                        //     title: 'Mood OFF ??',
-                        //     icon: 'question',
-                        //     iconHtml: '؟',
-                        //     confirmButtonText: 'YES',
-                        //     cancelButtonText: 'NO',
-                        //     showCancelButton: true,
-                        //     showCloseButton: true
-                        //   })
-
-
-
-                        
-
-                        // Send signup data to the backend
+                        const saveUser = { name: data.name, email: data.email }
                         fetch('https://quran-hadith-server.vercel.app/users', {
                             method: 'POST',
                             headers: {
-                                'Content-Type': 'application/json'
+                                'content-type': 'application/json'
                             },
-                            body: JSON.stringify(data)
+                            body: JSON.stringify(saveUser)
                         })
-                        .then(response => response.json())
-                        .then(responseData => {
-                            console.log(responseData);
-                            // Handle response as needed
-                        })
-                        .catch(error => {
-                            console.error("Error sending signup data:", error);
-                            // Handle error as needed
-                        });
+                            .then(res => res.json())
+                            .then(data => {
+                                if (data.insertedId) {
+                                    reset();
+                                    Swal.fire({
+                                        position: 'top-end',
+                                        icon: 'success',
+                                        title: 'User created successfully.',
+                                        showConfirmButton: false,
+                                        timer: 1500
+                                    });
+                                    navigate('/');
+                                }
+                            })
 
-                        navigate('/');
+
+
                     })
-                    .catch(error => console.log(error));
-            });
+                    .catch(error => console.log(error))
+            })
     };
     
     return (
