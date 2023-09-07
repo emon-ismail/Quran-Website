@@ -14,6 +14,8 @@ import SignUp from "../SignUp/SignUp";
 import Shop from "../Pages/Shop/Shop";
 import SeeMore from "../Components/Amal/SeeMore";
 import Amal from "../Components/Amal/Amal";
+import Profile from "../Components/Profile/Profile";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -67,6 +69,10 @@ export const router = createBrowserRouter([
       {
         path: "/see-more",
         element: <SeeMore></SeeMore>,
+      },
+      {
+        path: "/profile",
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>,
       },
     ],
   },

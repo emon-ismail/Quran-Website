@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
+// import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -7,16 +7,16 @@ import Swal from 'sweetalert2'
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
-    const [disabled, setDisabled] = useState(true);
+    // const [disabled, setDisabled] = useState(true);
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
 
     const from = location.state?.from?.pathname || "/";
 
-    useEffect(() => {
-        loadCaptchaEnginge(6);
-    }, [])
+    // useEffect(() => {
+    //     loadCaptchaEnginge(6);
+    // }, [])
 
     const handleLogin = event => {
         event.preventDefault();
@@ -42,15 +42,15 @@ const Login = () => {
             })
     }
 
-    const handleValidateCaptcha = (e) => {
-        const user_captcha_value = e.target.value;
-        if (validateCaptcha(user_captcha_value)) {
-            setDisabled(false);
-        }
-        else {
-            setDisabled(true)
-        }
-    }
+    // const handleValidateCaptcha = (e) => {
+    //     const user_captcha_value = e.target.value;
+    //     if (validateCaptcha(user_captcha_value)) {
+    //         setDisabled(false);
+    //     }
+    //     else {
+    //         setDisabled(true)
+    //     }
+    // }
 
     return (
         <>
@@ -81,14 +81,14 @@ const Login = () => {
                                 </label>
                             </div>
                             <div className="form-control">
-                                <label className="label">
+                                {/* <label className="label">
                                     <LoadCanvasTemplate />
-                                </label>
-                                <input onBlur={handleValidateCaptcha} type="text" name="captcha" placeholder="type the captcha above" className="input input-bordered" />
+                                </label> */}
+                                {/* <input onBlur={handleValidateCaptcha} type="text" name="captcha" placeholder="type the captcha above" className="input input-bordered" /> */}
 
                             </div>
                             <div className="form-control mt-6">
-                                <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
+                                <input  className="btn btn-primary " type="submit" value="Login" />
                             </div>
                         </form>
                         <p className='py-4'><small className='ml-8 '>New Here? <Link to="/signup">Create an account</Link> </small></p>

@@ -41,7 +41,7 @@ const SignUp = () => {
                         
 
                         // Send signup data to the backend
-                        fetch('https://quran-hadith-server.vercel.app/signup', {
+                        fetch('https://quran-hadith-server.vercel.app/users', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'

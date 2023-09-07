@@ -166,7 +166,7 @@ const Quiz = () => {
               <form method="dialog" className="modal-box">
                 <h3 className="font-bold text-xl  text-center">Results:</h3>
                 <p className="py-4 text-center  text-black
-                 text-lg font-semibold mt-4 mb-8  ">
+                 text-lg font-semibold mt-4 mb-8  text-green-600 ">
                   You got {calculateScore()} out of {quizQuestions.length} correct!
                 </p>
                 {renderResults()}

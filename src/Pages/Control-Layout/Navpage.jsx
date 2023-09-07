@@ -11,6 +11,7 @@ import SignUp from "../../SignUp/SignUp";
 import Shop from "../Shop/Shop";
 import SeeMore from "../../Components/Amal/SeeMore";
 import Amal from "../../Components/Amal/Amal";
+import Profile from "../../Components/Profile/Profile";
 
 const NavPage = () => {
   return (
@@ -27,8 +28,8 @@ const NavPage = () => {
           <Route path="signup" element={<SignUp></SignUp>} />
           <Route path="/shop" element={<Shop></Shop>} />
           <Route path="/" element={<Amal></Amal>} />
-          
           <Route path="/see-more" element={<SeeMore></SeeMore>} />
+          <Route path="/profile" element={<Profile></Profile>} />
         </Routes>
       </section>
     </React.Fragment>
